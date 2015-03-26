@@ -1,0 +1,22 @@
+connection:
+    server: irc.twitch.tv
+    port: 6667
+    nick: buttsbot
+    password: oauth_password
+    username: butts
+    name: buttbot
+    channels: ['#buttsbot']
+settings:
+    cmd_prefix: '!'
+    meme:       butt
+    set_meme:   Yes
+    changenick: Yes
+    debug:      Yes
+    invite:     Yes
+    reload:     Yes # you probably don't want to change this.
+    pass:       NobodyKnows
+    friends:    {}
+    enemies:    {}
+    frequency:
+         friend: 1
+         normal: 40

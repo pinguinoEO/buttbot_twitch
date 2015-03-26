@@ -1,0 +1,2 @@
+#!/bin/bash
+perl -e " print \"$1\n\" x $2  " | perl butt | sort | uniq -c

@@ -1,0 +1,32 @@
+severity = 3
+
+# severity five ===============================================================
+
+[-InputOutput::ProhibitTwoArgOpen]
+
+# severity four ===============================================================
+
+[ValuesAndExpressions::ProhibitCommaSeparatedStatements]
+allow_last_statement_to_be_comma_separated_in_map_and_grep = 1
+
+[-Subroutines::RequireFinalReturn]
+# they're not all functional
+
+[-ValuesAndExpressions::ProhibitConstantPragma]
+# Readonly isn't stock
+
+[-BuiltinFunctions::RequireBlockGrep]
+# mleh, disagree
+
+[-Modules::RequireExplicitPackage]
+[-Modules::RequireEndWithOne]
+# not everything is a package
+
+# severity three ==============================================================
+
+[-RegularExpressions::RequireExtendedFormatting]
+# they're not all complex
+
+# severity two ================================================================
+
+# severity one ================================================================
