@@ -2,7 +2,7 @@ connection:
     server: irc.twitch.tv
     port: 6667
     nick: buttsbot
-    password: oauth_password
+    password: oauth_password_here
     username: butts
     name: buttbot
     channels: ['#buttsbot']

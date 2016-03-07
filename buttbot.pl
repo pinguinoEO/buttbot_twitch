@@ -342,8 +342,13 @@ sub handle_channel_command {
 
 	#Mod commands, should only be used in BBot's channel
 	#Add actual authing later?
+	
+	#TODO TO DO TODO TODO IMPORTANT
+	#Instead of adding an auth system that works on Twitch (where there's no PMs)
+	#I hard-coded my nick here because I'm a good programmer
+	#If you're gonna use this bot, you need to fix this
 if($channel eq '#buttsbot'){
-    if ($cmd eq 'join' && $who eq 'pinguino') {
+    if ($cmd eq 'join' && $who eq 'mynick') {
         my ($arg_chan, $arg_rem) = _parse_channel($args);
         if (defined $arg_chan) {
             if ($self->in_channel($arg_chan)) {
@@ -355,7 +360,7 @@ if($channel eq '#buttsbot'){
         } else {
             $self->say(channel => $channel, body => "Gonna need a channel name.");;
         }
-    } elsif ($cmd eq 'leave' && $who eq 'pinguino') {
+    } elsif ($cmd eq 'leave' && $who eq 'mynick') {
         my ($arg_chan, $arg_msg) = _parse_channel($args);
         if (defined $arg_chan) {
  #           if (!$self->in_channel($arg_chan)) {
